@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <title>Formulario de boda de Ana y Álvaro</title>
+        <style>
+            textarea{
+                size: content;
+            }
+            button{
+                background-color: #4CAF50;
+                border-radius: 5%;
+                color: white;
+                padding: 14px 20px;
+                margin: 8px 0;
+                border: none;
+                cursor: pointer;
+                
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1> BODA ANA Y ALVARO</h1>
+        </header>
+        <main>
+            <form action="procesar-formulario.php" method="post">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+                <label for="asistencia">¿Contamos contigo?:</label>
+                <input type="radio" id="si" name="asistencia" value="si" required>
+                <label for="si">Sí</label>
+                <input type="radio" id="no" name="asistencia" value="no">
+                <label for="no">No</label>
+
+                <p>La ceremonia tendrá lugar en <a href="https://acortar.link/QUxl3s" target="_blank">Ayuntamiento de Murcia</a> y la celebracion en <a href="https://acortar.link/HIpqxr" target="_blank">Magna Garden</a> </p>
+                <label for="autobus">¿Necesitaras autobus?</label>
+                <select id="autobus" name="autobus" required>
+                    <option value="si">Sí</option>
+                    <option value="no">No</option>
+                </select>
+                <br>
+                <br>
+                <label for="mensaje">¿Tienes alguna intolerancia o alergia?</label>
+                <br>
+                <br>
+                <textarea id="mensaje" name="mensaje" placeholder="Escribe aqui que NO puedes comer" aria-setsize="content"></textarea>
+                <br>
+                <br>
+                <p>¿Necesitas sitio donde dormir?</p>
+                <input type="radio" id="si" name="dormir" value="si">
+                <label for="si">Sí</label>
+                <input type="radio" id="no" name="dormir" value="no">
+                <label for="no">No</label>
+                <br>
+                <br>
+                <button type="submit">Enviar</button>
+                
+            </form>
+        </main>
